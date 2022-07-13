@@ -1,0 +1,30 @@
+Library/API: Hugging Face
+
+Emotion Class: 6 Class in total
+	1. Joy/Happy              <- Happy(0)
+	2. Sadness/Sorrow	  <- Sad(1)
+	3. Fear/Anxiety           <- Fear(2)
+	4. Suprise/Astonished     <- Suprise(3)
+	5. Anger                  <- Anger(4)
+	6. Neutral                <- Neutral(5)
+
+
+Parameter Setting:
+	- Learning rate: 5e-5
+	- Batch size: 16
+	- Epochs: 8
+	- Dropout = 0.1 <-- Classification layer
+
+Optimizer:
+	- AdamW
+	- https://huggingface.co/docs/transformers/main_classes/optimizer_schedules
+
+
+Pretrained Model Testing
+	1. BERT		<-- bert-base-chinese
+	2. Albert	<-- uer/albert-base-chinese-cluecorpussmall
+	3. RoBERTa      <-- hfl/chinese-roberta-wwm-ext
+	4. DistilBert  <-- Geotrend/distilbert-base-zh-cased
+	5. DeBERTa  <-- microsoft/mdeberta-v3-base     			(Multilingual)
+	6. Electra  <-- hfl/chinese-electra-180g-base-discriminator
+	7. XLnet  <-- hfl/chinese-xlnet-base
